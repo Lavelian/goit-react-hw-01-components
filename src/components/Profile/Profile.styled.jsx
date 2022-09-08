@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
-  width: 200px;
+export const Box = styled.div`
+  width: 300px;
   text-align: center;
   margin-bottom: 30px;
 `;
@@ -17,13 +17,19 @@ export const DescriptionInfo = styled.p`
     margin-bottom: 10px;
   }
 `;
-export const StatsList = styled.ul``;
+export const StatsList = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #d7d7d7;
+  padding: 20px;
+`;
 export const StatsItem = styled.li`
-  :not(:first-of-type) {
-    margin-left: 10px;
-  }
+  display: flex;
+  flex-direction: column;
 `;
 export const StatsQuantity = styled.span`
-  margin-left: 10px;
+  margin-top: 5px;
 `;
 export const StatsLabel = styled.span``;

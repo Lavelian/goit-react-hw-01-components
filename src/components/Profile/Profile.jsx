@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import {
-  Container,
+  Box,
   Description,
   ProfileImg,
   DescriptionInfo,
@@ -18,7 +18,7 @@ export default function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <Container>
+    <Box>
       <Description>
         <ProfileImg src={avatar} alt="User avatar" />
         <DescriptionInfo>{username}</DescriptionInfo>
@@ -40,7 +40,7 @@ export default function Profile({
           <StatsQuantity>{likes}</StatsQuantity>
         </StatsItem>
       </StatsList>
-    </Container>
+    </Box>
   );
 }
 
