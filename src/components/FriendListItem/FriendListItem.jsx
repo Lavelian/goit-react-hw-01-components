@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { ItemGallery, Status, Img, FriendName } from './FriendListItem.styled';
 export default function FriendListItem({ isOnline, avatar, name }) {
   return (
@@ -8,3 +9,9 @@ export default function FriendListItem({ isOnline, avatar, name }) {
     </ItemGallery>
   );
 }
+
+FriendListItem.propTypes = {
+  isOnline: PropTypes.bool,
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+};

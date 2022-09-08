@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   Container,
   Description,
@@ -42,3 +43,14 @@ export default function Profile({
     </Container>
   );
 }
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }),
+};

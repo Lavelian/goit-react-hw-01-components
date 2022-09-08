@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   TransactionTable,
   TransactionThead,
@@ -29,3 +30,14 @@ export default function TransactionHistory({ items }) {
     </TransactionTable>
   );
 }
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  //   {
+  //     type: PropTypes.string,
+  //     amount: PropTypes.string,
+  //     percentage: PropTypes.string,
+  //     currency: PropTypes.string,
+  //   },
+  // ]).isRequired,
+};

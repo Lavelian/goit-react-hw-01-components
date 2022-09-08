@@ -10,7 +10,6 @@ export const Status = styled.span`
   height: 10px;
   border-radius: 5px;
   background-color: ${status => {
-    console.log(status.children);
     switch (status.children) {
       case true:
         return 'green';
