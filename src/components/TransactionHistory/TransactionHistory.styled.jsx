@@ -9,7 +9,7 @@ export const TransactionThead = styled.thead`
 `;
 export const TransactionTr = styled.tr`
   border-top: 1px solid black;
-  :nth-child(2n) {
+  :nth-of-type(2n) {
     background-color: gray;
   }
   :last-child {
@@ -17,18 +17,15 @@ export const TransactionTr = styled.tr`
   }
 `;
 export const TransactionTh = styled.th`
-  :not(:nth-child(2)) {
+  :not(:nth-of-type(2)) {
     border-left: 1px solid black;
     border-right: 1px solid black;
   }
-`; // hfhfh
+`;
 
 export const TransactionTbody = styled.tbody``;
 export const TransactionTd = styled.td`
-  /* // ofhfhf
-  :not(:last-child) {} */
-
-  :not(:nth-child(2)) {
+  :not(:nth-of-type(2)) {
     border-left: 1px solid black;
     border-right: 1px solid black;
   }

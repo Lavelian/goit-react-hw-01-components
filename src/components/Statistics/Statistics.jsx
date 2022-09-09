@@ -9,7 +9,6 @@ import {
 } from './Statistics.styled';
 
 export default function Statistics({ title, stats }) {
-  console.log(stats);
   return (
     <StatisticsSection>
       <StatisticsTitle>{title ? title : null}</StatisticsTitle>
@@ -27,10 +26,11 @@ export default function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array,
-  // stats: PropTypes.shape({
-  //   id: PropTypes.string,
-  //   label: PropTypes.string,
-  //   percentage: PropTypes.number,
-  // }).isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ).isRequired,
 };
